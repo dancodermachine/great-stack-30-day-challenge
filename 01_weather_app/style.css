@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;    
+    font-family: 'Poppins', sans-serif; /* If poppins is not available sets to sans-serif */
+    box-sizing: border-box; /* If you set an element's width to 100 pixels, that 100 pixels will include any border or padding you added, and the content box will shrink to absorb that extra width. */    
+}
+
+body {
+    background: #222; 
+}
+
+.card {
+    width: 90%;
+    max-width: 470px;
+    background: linear-gradient(135deg, #00feba, #5b54);
+    color: #fff; /* text color */
+    margin: 100px auto 0; /* 100 top, right and left auto, and 0 bottom */
+    border-radius: 20px;
+    padding: 40px 35px;
+    text-align: center; 
+}
+
+.search {
+    width: 100%;
+    display: flex; /*direct children of that container become flex items: input and bottom*/
+    flex-direction: row; 
+    align-items: center;  
+    justify-content: space-between; /* The items are evenly distributed within the alignment container along the main axis. The spacing between each pair of adjacent items is the same. The first item is flush with the main-start edge, and the last item is flush with the main-end edge. */   
+}
+
+.search input {
+    border: 0; /*removes border*/
+    outline: 0; /*removes border that appears when clicking the search bar*/
+    background: #ebfffc;
+    color: #555; /*color text when you start writing*/
+    padding: 10px 25px;
+    height: 60px;
+    border-radius: 30px;
+    flex: 1; /*This tells the input to grow and fill up available space inside its flex container. So, if there’s something like a button next to it, the input will take up as much space as possible.*/
+    margin-right: 16px;
+    font-size: 18px;
+}
+
+.search button {
+    border: 0;
+    outline: 0;
+    background: #ebfffc;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+}
+
+.search button img {
+    width: 16px;
+}
+
+.weather-icon {
+    width: 170px;
+    margin-top: 30px;
+}
+
+.weather h1 {
+    font-size: 80px;
+    font-weight: 500;
+}
+
+.weather h2 {
+    font-size: 45px;
+    font-weight: 400;
+    margin-top: 10px;
+}
+
+.details {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    margin-top: 50px;
+}
+
+.col {
+    display: flex;
+    align-items: center;
+    text-align: left;    
+}
+
+.col img {
+    width: 40px;
+    margin-right: 10px; 
+}
+
+.humidity, .wind {
+    font-size: 28px;
+    margin-top: -6px; 
+}
+
+.weather {
+    display: None;
+}
+
+.error {
+    text-align: left;
+    margin-left: 10px;
+    font-size: 14px;
+    margin-top: 10px;
+    display: None; 
+}
